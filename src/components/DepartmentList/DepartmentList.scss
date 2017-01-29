@@ -1,0 +1,45 @@
+.departments {
+
+    &__title {
+        text-align: center;
+        margin: 10px 0 30px;
+    }
+
+    &__list {
+
+    }
+
+    &__item {
+        margin-top: -1px;
+        border: 1px solid #ddd;
+
+        list-style-type: none;
+
+        transition: background .5s;
+
+        &:first-child {
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+        }
+        
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: 20px 30px;
+
+        color: rgba(0, 0, 0, 0.8);
+
+        text-align: center;
+        text-transform: uppercase;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.8);
+        }
+    }
+}
